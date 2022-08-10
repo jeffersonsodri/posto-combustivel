@@ -48,17 +48,13 @@ export default function Home() {
                 <a href="#" className="btn btn-primary">
                   <i className="fa fa-edit">Editar</i>
                 </a>
-                <a href="#" className="btn btn-danger">
+                <a href={`/api/lancamento/deleteLancamento/${lanca.id}`} className="btn btn-danger">
                   <i className="fa fa-edit">Excluir</i>
                 </a>
               </div>
             </div>
           </div>
         );
-      })}
-
-      {lancamentos.map((lanca) => {
-        lanca.id;
       })}
     </div>
   );
