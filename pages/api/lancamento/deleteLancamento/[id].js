@@ -15,7 +15,7 @@ export default async function handler(req, res) {
 
     try {
 
-        const query = "DELETE FROM lancamento_abastecimento WHERE id = '" + req.query.id + "'"
+        const query = "DELETE FROM lancamento_abastecimento WHERE id='" + req.query.id + "'"
         const values = []
         const data = await dbconnection.execute(query, values)
         dbconnection.end();
